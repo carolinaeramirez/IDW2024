@@ -5,3 +5,37 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.navegacion{
+  width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+display: flex;
+background-color: beige;
+align-items: center;
+justify-content: flex-start;
+flex-direction: row;
+}
+.navegacion-enlaces{
+  margin-right: 5%;
+  width: 75%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding: 5%;
+}
+.navegacion-enlaces ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-right: 5%;
+}
+.navegacion-enlaces ul li a{
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+
+}
