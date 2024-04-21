@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* Encabezado */
+.encabezado {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 15%;
+  background-color: rgb(51, 58, 64);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  /* Responsive */
+  /* @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+  } */
+}
+
+.encabezado__logo {
+  margin-left: 2%;
+  width: 10%;
+
+  /* Responsive */
+  /* @media (max-width: 768px) {
+    margin-left: 0;
+    width: 100%;
+  } */
+}
+
+.encabezado__logo__img {
+  width: 100%;
+}
+
+.encabezado__titulo {
+  width: 15%;
+  color: white;
+  font-size: 1rem;
+
+  /* Responsive */
+  /* @media (max-width: 768px) {
+    margin-left: 0;
+    width: 100%;
+  } */
+}
+
+.encabezado__nav {
+  margin-right: 5%;
+  width: 75%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: row;
+
+  /* Responsive */
+  /* @media (max-width: 768px) {
+    margin-right: 0;
+    width: 100%;
+    justify-content: flex-start;
+  } */
+}
+
+.encabezado__nav ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.encabezado__nav ul li a {
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.encabezado_conferencia {
+  color: white;
+}
+
+.encabezado_links {
+  color: rgb(151, 151, 161);
+}
+
+.encabezado_comprar_tickets {
+  color: rgb(42, 168, 69);
+}
+
+/* conferencia Bs As */
+.section_conferencia {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("../asssets/img/palaciodelasaguas.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+  color: white;
+  padding-right: 5%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+
+  /* Responsive */
+  /* @media (max-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  } */
+}
+
+.section_conferencia h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+
+  /* Responsive */
+  /* @media (max-width: 768px) {
+    font-size: 24px;
+  } */
+}
+
+.section_conferencia p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 50%;
+  padding: 0;
+
+  /* Responsive */
+  /* @media (max-width: 768px) {
+    font-size: 14px;
+  } */
+}
+
+.section_conferencia_button {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+
+  /* Responsive */
+  /* @media (max-width: 768px) {
+    justify-content: center;
+  } */
+}
+
+.comprar_tickets {
+  text-decoration: none;
+  border-radius: 8%;
+  border: none;
+  background-color: rgb(39, 168, 68);
+  color: white;
+  padding: 1%;
+  margin-left: 10px;
+  font-size: 1rem;
+
+  /* Responsive */
+  /* @media (max-width: 768px) {
+    margin: 0 auto;
+  } */
+}
+
+.quiero_ser_orador {
+  text-decoration: none;
+  border-radius: 8%;
+  border: solid 1px white;
+  color: white;
+  padding: 1%;
+  font-size: 1rem;
+
+  /* Responsive */
+  /* @media (max-width: 768px) {
+    margin: 0 auto;
+  } */
+}
+
+/* LOS ORADORES */
+.oradores {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tarjeta {
+  background: white;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 15px;
+  width: 30%;
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 20px;
+  text-align: left;
+}
+.tarjeta p {
+  display: flex;
+  font-size: 1rem;
+  overflow-x: hidden;
+  overflow-y: visible;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+.tarjeta img {
+  width: 100%;
+  height: 60%;
+  object-fit: contain;
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.cuerpoTarjeta {
+  margin: 10px;
+}
+.cuerpoTarjeta h4 {
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 0 5px;
+}
+.tituloNombre {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.colorCeleste {
+  font-size: 1rem;
+  background-color: rgb(0, 200, 255);
+  color: white;
+}
+.colorAmarillo {
+  font-size: 1rem;
+  background-color: rgb(255, 255, 0);
+  color: black;
+}
+.colorGris {
+  font-size: 1rem;
+  background-color: rgb(106, 106, 106);
+  color: white;
+}
+.colorRojo {
+  font-size: 1rem;
+  background-color: rgb(171, 2, 2);
+  color: white;
+}
+
+/* honolulu section. */
+
+.lugar_fecha {
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.lugar_fecha_imagen {
+  width: 100%;
+}
+
+.div_img {
+  width: 50%;
+}
+.lugar_fecha_texto {
+  padding: 2%;
+  width: 50%;
+  background-color: rgb(53, 58, 61);
+  display: flex;
+  justify-content: start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.lugar_fecha_texto h2 {
+  color: white;
+  font-size: 2rem;
+}
+.lugar_fecha_texto p {
+  color: white;
+  font-size: 1rem;
+}
+.lugar_fecha_conoce_mas {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  color: white;
+  font-size: 1rem;
+  border: solid 1px white;
+}
+/* ***************************************************** */
+/* Formulario oradores */
+
+.formulario-section {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.titulo-subtitulo {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titulo-subtitulo .titulo {
+  color: black;
+  font-size: 2rem;
+}
+.titulo-subtitulo .subtitulo {
+  color: black;
+  font-size: 1rem;
+}
+.titulo-subtitulo .info {
+  text-align: left;
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.formulario-row {
+  background-color: aqua;
+  width: 80%;
+  margin-left: 15%;
+}
+.input-textarea {
+  width: 80%;
+  height: auto;
+  margin-left: 15%;
+}
+.label-textarea{
+  color: rgb(115, 110, 110);
+  font-size: 1rem;
+  padding: 0;
+}
+.input {
+  width: 100%;
+  margin-right: 5%;
+
+  border: solid 1px gray;
+  border-radius: 5%;
+}
+.input_textarea {
+  width: 105%;
+  height: 20vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.btn-enviar {
+  margin-top: 1%;
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(150, 201, 62);
+  border-radius: 5px;
+  border: solid 1px rgb(150, 201, 62);
+  font-size: 1rem;
+}
+/* FOOTER */
+.footer_contenedor {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+  padding: 20px 100px 20px 100px;
+  background: linear-gradient(to right, rgb(28, 54, 67), rgb(29, 82, 113));
+}
+.footer_contenedor ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.anclas_footer {
+  width: 10%;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  margin-left: 5%;
+}
