@@ -7,15 +7,87 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
+/* HEADER */
+header{
+    width: 100%;
+    height: 180px;
+    background: rgb(23, 134, 76);
+    background-attachment: fixed;
+    position: absolute;
+    padding-bottom: 10px;
+}
+header img {
+    width: 10%;
+    height: 65%;
+    margin-left: 40px;
+    position: relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color: #f1e7c2;
+    font-size: larger;
+    font-weight: 320;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+nav > a:hover{
+    color:rgb(245, 245, 245);
+    text-decoration: overline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    color: rgb(27, 123, 27)
+}
+
+/* PAGINA CONTACTO */
+.bodycontacto {
     display:flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0 0 0 / .18),rgba(0 0 0 / .8)),url(img/fondocontactos.jpg);
+    background: linear-gradient(rgba(0 0 0 / .18),rgba(0 0 0 / .8)),url(../img/fondocontactos.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
 }
+.contenedor-sobre-nos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-sobre-nos{
+    width: 23%;
+    margin-bottom: 10px;
+}
+.contenedor-sobre-nos .contenedor-textos{
+    width: 50%;
+}
+
+.contenedor-textos h3{
+    margin-bottom: 25px;
+    color:rgb(43, 153, 71);
+    margin-top: 30px;
+}
+
+.contenedor-textos p{
+    padding: 5px, 5px, 20px, 15px;
+    text-align: justify;
+}
+
+/* PAGINA CONTACTOS */
 .container {
     display:grid;
     grid-template-columns: repeat(2,50%);
