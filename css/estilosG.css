@@ -3,40 +3,17 @@
 * {
     margin:0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
 /* HEADER */
-header{
-    width: 100%;
-    height: 180px;
-    background: rgb(23, 134, 76);
-    background-attachment: fixed;
-    position: absolute;
-    padding-bottom: 10px;
-}
-header img {
-    width: 10%;
-    height: 65%;
-    margin-left: 40px;
-    position: relative;
-}
-nav{
-    text-align: right;
-    padding: 30px 50px 0 0;
-}
-nav > a{
-    color: #f1e7c2;
-    font-size: larger;
-    font-weight: 320;
-    text-decoration: none;
-    margin-right: 25px;
-}
 
-nav > a:hover{
-    color:rgb(245, 245, 245);
-    text-decoration: overline;
+header img {
+    width: 5%;
+    height: 90%;
+    margin-left: 45px;
+    margin-top: 3px;
+    position: relative;
 }
 
 header .textos-header{
@@ -49,58 +26,65 @@ header .textos-header{
 }
 
 .textos-header h2{
+    padding-top: 35px;
     font-size: 30px;
-    color: rgb(27, 123, 27)
+    color: rgb(206, 108, 195);
+    text-align: center;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #984898;
+    text-shadow: 5px 5px 5px rgba(60, 168, 97);
+} 
+header {
+    background: rgba(60, 168, 97, 0.9);
+    width: 100%;
+    height: 70px;
+    position: relative;
+  }
+nav {
+    float: right;
+  }
+nav ul {
+    list-style: none;
+    overflow: hidden; 
 }
-
-/* PAGINA CONTACTO */
-.bodycontacto {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgba(0 0 0 / .18),rgba(0 0 0 / .8)),url(../img/fondocontactos.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
+nav ul li {
+   float: left;
+   font-family: Arial, sans-serif;
+   font-size: 16px;
 }
-.contenedor-sobre-nos{
-    display: flex;
-    justify-content: space-evenly;
+nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
 }
-.imagen-sobre-nos{
-    width: 23%;
-    margin-bottom: 10px;
-}
-.contenedor-sobre-nos .contenedor-textos{
-    width: 50%;
-}
-
-.contenedor-textos h3{
-    margin-bottom: 25px;
-    color:rgb(43, 153, 71);
-    margin-top: 30px;
-}
-
-.contenedor-textos p{
-    padding: 5px, 5px, 20px, 15px;
-    text-align: justify;
+nav ul li:hover {
+    background: #88c7b1;
 }
 
 /* PAGINA CONTACTOS */
+.bodycontacto {
+    align-items: center;
+    background: linear-gradient(rgba(0 0 0 / .18),rgba(0 0 0 / .8)),url(../img/fondocontactos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .container {
-    display:grid;
+    display:flex;
     grid-template-columns: repeat(2,50%);
+    margin-left: 30px;
+    margin-right: 20px;
     padding:20px;
-    gap:10px;
-    width: 1000px;
+    gap:30px;
+    width: 100%;
 }
 
 .box-info {
     color:#fff;
     display:flex;
     flex-direction: column;
-    gap:50px;
+    gap:40px;
 }
 
 .box-info > h1 {
@@ -111,7 +95,7 @@ header .textos-header{
 .data {
     display: flex;
     flex-direction: column;
-    gap:25px
+    gap:25px;
 }
 
 .data > p {
@@ -119,11 +103,10 @@ header .textos-header{
 }
 
 .data > p > i {
-    color:rgb(20, 220, 67);
+    color:#7ad3b4;
     margin-right: 10px;
     font-size:25px;
 }
-
 
 .links {
     display:flex;
@@ -134,7 +117,7 @@ header .textos-header{
     text-decoration: none;
     width: 40px;
     height: 40px;
-    background: rgb(51, 8, 116);
+    background: #ffc6ff;
     text-align: center;
     transition: .1s;
 }
@@ -148,8 +131,9 @@ header .textos-header{
 form {
     display:flex;
     flex-direction: column;
-    text-align: center;
-    gap:15px;
+    text-align: left;
+    gap:5px;
+    margin-top: 70px;
 }
 
 .input-box {
@@ -157,9 +141,8 @@ form {
 }
 
 .input-box > input {
-    width: 100%;
+    width: 180%;
     height: 40px;
-    padding: 0 10px;
     outline:none;
     background: rgba(255 255 255 / .25);
     border:3px solid transparent;
@@ -171,9 +154,8 @@ form {
 .input-box > input::placeholder,
 .input-box > textarea::placeholder {
     color:#fff;
-    text-shadow: 2px 1px 1px green;
+    text-shadow: 2px 1px 1px #ffc6ff;
     font-size: medium;
-    
 }
 
 .input-box > input:focus::placeholder,
@@ -183,13 +165,12 @@ form {
 
 .input-box > input:focus,
 .input-box > textarea:focus {
-    border-bottom:3px solid rgb(8, 121, 35);
-
+    border-bottom:3px solid #ffc6ff;
 }
 
 .input-box > textarea {
-    width: 100%;
-    height: 130px;
+    width: 180%;
+    height: 180px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.25);
     border:3px solid transparent;
@@ -204,20 +185,20 @@ form {
     position:absolute;
     top:50%;
     transform: translateY(-50%);
-    right: 10px;
+    right: -100px;
     color:rgba(255 255 255 / .25);
     transition: .3s;
 }
 
 .input-box > input:focus ~ i {
-    color:rgb(8, 116, 23);
+    color:#ffc6ff;
 }
 
 form > button {
     width: 100%;
     padding: 10px;
     outline: none;
-    background: rgb(8, 116, 23);
+    background:  rgba(60, 168, 97);
     color:#fff;
     border:none;
     transition: .1s;
@@ -227,20 +208,93 @@ form > button {
 
 form > button:hover,
 .links > a:hover {
-    background: rgb(8, 116, 23);
+    background: #6fb29c;
+
 }
-.ubicacion{
-    position: relative;
-    color:#fff;
-    letter-spacing: 1.5px;
-    padding: 30px;
-    margin-bottom: 20px;
+
+
+/* PAGINA NOSOTROS */
+
+.contenedor-sobre-nos{
+display: flex;
+    justify-content: space-evenly;
+    padding: 50px 20px 30px 20px;
+}    
+
+.imagen-sobre-nos{
+    display: block;
+    width: 25%;
+    height: 100%;
+    padding: 5px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 15px 3px rgba(180, 62, 154, 0.5);
 }
-.mapa {
-    margin-top: 25px;
+.imagen-sobre-nos:hover {
+    transform: scale(1.1);
 }
-.mapa > iframe{
-    box-shadow: 1px 1px 5px 5px rgb(7, 112, 21);      
+
+.contenedor-sobre-nos .contenedor-textos{
+    width: 40%;
+}
+
+.contenedor-textos h3{
+    margin-bottom: 5px;
+    color:rgb(43, 153, 71);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.contenedor-textos p{
+    padding: 5px, 5px, 10px, 15px;
+    text-align: justify;
+}
+
+/* PAGINA PROPIETARIOS*/
+.constru{
+    height: 60%;
+    width: 100%;
+    justify-content: center;
+    padding: 50px 20px 30px 20px;   
+    align-items: center;
+    background: linear-gradient(rgba(0 0 0 / .3),rgba(255, 189, 243, 0.3)),url(../img/perrovalija.jpg);
+    background-size: cover;
+    background-position: center;
+    padding:20px;
+    gap:30px;
+    width: 100%;
+}
+
+/* FOOTER */
+footer{
+    background: #f592f5;
+    padding: 15px 0 15px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-pie {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.content-pie{
+    text-align: center;
+}
+.content-pie h4{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.content-pie p{
+    color: #fff;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    color: #4d4540;
 }
 
 @keyframes shake { 
