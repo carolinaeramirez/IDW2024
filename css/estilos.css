@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   box-sizing: border-box;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -14,6 +14,11 @@ background-color: beige;
 align-items: center;
 justify-content: flex-start;
 flex-direction: row;
+background-image: url(../asssets/img/portada1.jpeg);
+background-repeat: no-repeat;
+background-size: auto;
+background-attachment: inherit ;
+background-position: center;
 }
 .navegacion-enlaces{
   margin-right: 5%;
@@ -38,4 +43,18 @@ flex-direction: row;
   text-decoration: none;
   font-size: 1rem;
 
+}
+
+/* Formulario de destino */
+.formulario{
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.formulario-inputs{
+  display: inline;
+  border: solid lightseagreen 2px;
+
+  border-radius: 5px;
 }
