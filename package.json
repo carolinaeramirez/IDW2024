@@ -1,0 +1,23 @@
+{
+  "name": "idw2024",
+  "version": "1.0.0",
+  "description": "TPIDW",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolinaeramirez/IDW2024.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolinaeramirez/IDW2024/issues"
+  },
+  "homepage": "https://github.com/carolinaeramirez/IDW2024#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}

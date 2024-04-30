@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body{
+  background-color: rgb(216, 215, 215);
+}
+/* PAGINA PRINCIPAL - HOME */
+/* Barra de navegacion */
+.header {
+  background-image: linear-gradient(
+    to right,
+    rgb(191, 199, 192),
+    rgb(9, 133, 102)
+  );
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.nav-bar {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.logo img {
+  width: 25%;
+  border-radius: 50%;
+  margin-right: 10%;
+  margin-left: 0;
+}
+.logo-text h2 {
+  display: block;
+  margin: 0;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-bar ul li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-bar ul li a:hover {
+  color: #0b912c;
+}
+.nav-bar ul li a:focus {
+  outline: none;
+  color: rgb(17, 16, 16);
+}
+
+/*************************/
+/*bara de busqueda*/
+.search-bar {
+  background-image: linear-gradient(rgb(223, 226, 223), rgb(123, 139, 135));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.search-bar-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+ 
+}
+.input-label {
+  margin-bottom: 5px;
+}
+
+.search-input {
+  border: solid 1px rgb(72, 156, 114);
+  border-radius: 5%;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.search-button {
+  width: 100px;
+  border: solid 1px green;
+  color: black;
+  font-size: 18px;
+  border-radius: 5%;
+  padding: 1%;
+}
+.search-button:hover {
+  background-color: #7dd89a;
+}
+/* Main */
+.main {
+  margin: 0;
+  padding: 0;
+}
+
+header img {
+  width: 5%;
+  height: 90%;
+  margin-left: 45px;
+  margin-top: 3px;
+  position: relative;
+}
+
+header .textos-header {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textos-header h2 {
+  padding-top: 35px;
+  font-size: 30px;
+  color: rgb(99, 74, 96);
+  text-align: center;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #6b556b;
+  text-shadow: 5px 5px 5px rgb(75, 87, 79);
+}
+
+/* PAGINA HOME */
+.container-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 10px 30px 30px 20px;
+}
+
+.item:hover {
+  box-shadow: 0 10px 20px rgba(171, 30, 152, 0.3);
+}
+.item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.9s;
+}
+.item figure {
+  overflow: hidden;
+}
+.item:hover img {
+  transform: scale(1.2);
+}
+.info-product {
+  padding: 5px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-align: center;
+}
+.price {
+  font-size: 18px;
+  font-weight: 700px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgb(49, 95, 51);
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 15px 10px;
+  cursor: pointer;
+  border: 3px solid black;
+  border-radius: 5%;
+  box-shadow: 0 2px 2px 1px rgb(139, 67, 140);
+}
+
+/* PAGINA CONTACTOS */
+.bodycontacto {
+  align-items: center;
+  background: linear-gradient(rgba(0 0 0 / 0.18), rgba(0 0 0 / 0.8)),
+    url(../img/fondocontactos.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  grid-template-columns: repeat(2, 50%);
+  margin-left: 30px;
+  margin-right: 20px;
+  padding: 20px;
+  gap: 30px;
+  width: 100%;
+}
+
+.box-info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.box-info > h1 {
+  text-align: left;
+  letter-spacing: 5px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.data > p {
+  font-size: 1rem;
+}
+
+.data > p > i {
+  color: #7ad3b4;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+.links > a {
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background: #ffc6ff;
+  text-align: center;
+  transition: 0.1s;
+}
+
+.links > a > i {
+  color: #fff;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+  margin-top: 70px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box > input {
+  width: 180%;
+  height: 40px;
+  outline: none;
+  background: rgba(255 255 255 / 0.25);
+  border: 3px solid transparent;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+  color: #fff;
+  text-shadow: 2px 1px 1px #ffc6ff;
+  font-size: medium;
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+  color: transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+  border-bottom: 3px solid #ffc6ff;
+}
+
+.input-box > textarea {
+  width: 180%;
+  height: 180px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 3px solid transparent;
+  letter-spacing: 1px;
+  outline: none;
+  transition: 0.3s;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.input-box > i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -100px;
+  color: rgba(255 255 255 / 0.25);
+  transition: 0.3s;
+}
+
+.input-box > input:focus ~ i {
+  color: #ffc6ff;
+}
+
+form > button {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background: rgba(60, 168, 97);
+  color: #fff;
+  border: none;
+  transition: 0.1s;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form > button:hover,
+.links > a:hover {
+  background: #6fb29c;
+}
+
+/* PAGINA NOSOTROS */
+
+.contenedor-sobre-nos {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 20px 30px 20px;
+}
+
+.imagen-sobre-nos {
+  display: block;
+  width: 25%;
+  height: 100%;
+  padding: 5px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 15px 3px rgba(180, 62, 154, 0.5);
+}
+.imagen-sobre-nos:hover {
+  transform: scale(1.1);
+}
+
+.contenedor-sobre-nos .contenedor-textos {
+  width: 40%;
+}
+
+.contenedor-textos h3 {
+  margin-bottom: 5px;
+  color: rgb(43, 153, 71);
+  margin-top: 15px;
+  text-align: center;
+}
+
+.contenedor-textos p {
+  padding: 5px, 5px, 10px, 15px;
+  text-align: justify;
+}
+
+/* PAGINA PROPIETARIOS*/
+.constru {
+  height: 60%;
+  width: 100%;
+  justify-content: center;
+  padding: 50px 20px 30px 20px;
+  align-items: center;
+  background: linear-gradient(rgba(0 0 0 / 0.3), rgba(255, 189, 243, 0.3)),
+    url(../img/perrovalija.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  gap: 30px;
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  background: #f592f5;
+  padding: 15px 0 15px 0;
+  margin: auto;
+  overflow: hidden;
+}
+.contenedor-pie {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.content-pie {
+  text-align: center;
+}
+.content-pie h4 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.content-pie p {
+  color: #fff;
+}
+.titulo-final {
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0 0 0;
+  color: #4d4540;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box-info {
+    gap: 15px;
+  }
+
+  .box-info > h1 {
+    font-size: 1.5rem;
+  }
+}
