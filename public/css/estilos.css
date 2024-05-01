@@ -14,7 +14,7 @@ body{
   background-image: linear-gradient(
     to right,
     rgb(191, 199, 192),
-    rgb(9, 133, 102)
+    rgb(8, 105, 80)
   );
   width: 100%;
   height: 30%;
@@ -38,7 +38,7 @@ body{
 }
 .logo img {
   width: 25%;
-  border-radius: 50%;
+  border-radius: 70px;
   margin-right: 10%;
   margin-left: 0;
 }
@@ -66,7 +66,8 @@ body{
   text-decoration: none;
 }
 .nav-bar ul li a:hover {
-  color: #0b912c;
+  color: #010803;
+  font-size: larger;
 }
 .nav-bar ul li a:focus {
   outline: none;
@@ -74,7 +75,7 @@ body{
 }
 
 /*************************/
-/*bara de busqueda*/
+/*barra de busqueda*/
 .search-bar {
   background-image: linear-gradient(rgb(223, 226, 223), rgb(123, 139, 135));
   display: flex;
@@ -123,6 +124,7 @@ body{
   font-size: 18px;
   border-radius: 5%;
   padding: 1%;
+  background-color: rgb(8, 105, 80);
 }
 .search-button:hover {
   background-color: #7dd89a;
@@ -153,7 +155,7 @@ header .textos-header {
 .textos-header h2 {
   padding-top: 35px;
   font-size: 30px;
-  color: rgb(99, 74, 96);
+  color:  rgb(8, 105, 80);
   text-align: center;
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: #6b556b;
@@ -169,7 +171,7 @@ header .textos-header {
 }
 
 .item:hover {
-  box-shadow: 0 10px 20px rgba(171, 30, 152, 0.3);
+  box-shadow: 0 10px 20px rgba(65, 77, 65, 0.3);
 }
 .item img {
   width: 100%;
@@ -199,7 +201,7 @@ header .textos-header {
 
 .btn {
   display: inline-block;
-  background-color: rgb(49, 95, 51);
+  background-color:  rgb(8, 105, 80);
   margin-bottom: 15px;
   color: #ffffff;
   font-size: 20px;
@@ -207,7 +209,7 @@ header .textos-header {
   cursor: pointer;
   border: 3px solid black;
   border-radius: 5%;
-  box-shadow: 0 2px 2px 1px rgb(139, 67, 140);
+  box-shadow: 0 2px 2px 1px rgb(131, 126, 131);
 }
 
 /* PAGINA CONTACTOS */
@@ -266,7 +268,7 @@ header .textos-header {
   text-decoration: none;
   width: 40px;
   height: 40px;
-  background: #ffc6ff;
+  background: #5dd5a7;
   text-align: center;
   transition: 0.1s;
 }
@@ -303,7 +305,7 @@ form {
 .input-box > input::placeholder,
 .input-box > textarea::placeholder {
   color: #fff;
-  text-shadow: 2px 1px 1px #ffc6ff;
+  text-shadow: 2px 1px 1px  #0c7e52;
   font-size: medium;
 }
 
@@ -314,7 +316,7 @@ form {
 
 .input-box > input:focus,
 .input-box > textarea:focus {
-  border-bottom: 3px solid #ffc6ff;
+  border-bottom: 3px solid #0c7e52;
 }
 
 .input-box > textarea {
@@ -340,24 +342,15 @@ form {
 }
 
 .input-box > input:focus ~ i {
-  color: #ffc6ff;
+  color: rgb(60, 208, 136);
 }
 
-form > button {
-  width: 100%;
-  padding: 10px;
-  outline: none;
-  background: rgba(60, 168, 97);
-  color: #fff;
-  border: none;
-  transition: 0.1s;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-form > button:hover,
-.links > a:hover {
-  background: #6fb29c;
+#button-enviar{
+  width: 180%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
 }
 
 /* PAGINA NOSOTROS */
@@ -376,7 +369,7 @@ form > button:hover,
   margin-top: 20px;
   margin-right: 10px;
   border-radius: 6px;
-  box-shadow: 0 0 15px 3px rgba(180, 62, 154, 0.5);
+  box-shadow: 0 0 15px 3px rgba(15, 102, 47, 0.5);
 }
 .imagen-sobre-nos:hover {
   transform: scale(1.1);
@@ -416,7 +409,11 @@ form > button:hover,
 
 /* FOOTER */
 footer {
-  background: #f592f5;
+  background-image: linear-gradient(
+    to left,
+    rgb(191, 199, 192),
+    rgb(8, 105, 80)
+  );
   padding: 15px 0 15px 0;
   margin: auto;
   overflow: hidden;
